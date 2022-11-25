@@ -16,6 +16,7 @@ def index():
         try:
             db_custom_instruction = cursor.execute("SELECT country FROM 'codes' WHERE code = ?", (area_data_form,)).fetchall()
             db_row_country = db_custom_instruction[0][0]
+            last_number = db_row_country
             return render_template("results.html", area_data_form=area_data_form, db_row_country=db_row_country)
         except IndexError as e:
             return render_template("error.html")

@@ -1,9 +1,13 @@
 {% extends "layout.html" %}
 
 {% block body %}
-    <p>{{ cur }}</p>
+<div class="main-div-grid">
+    <h1>Area code finder (with countries)</h1>
+    <img class="banner-img" src="static/img/lucas-george-wendt-IYm2PCy0f8c-unsplash.webp">
+    <p class="description">Please enter a phone code number to find country.</p>
     <form action="/" method="POST">
-        <input type="number" name="area_data_form" placeholder="Area code">
-        <input type="submit">
+        <input type="number" id="user_input_code_country" name="area_data_form" placeholder="Enter area code here!">
+        <input id="user_sender_code_country" type="submit">
     </form>
+</div>
 {% endblock %}
