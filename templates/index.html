@@ -1,13 +1,18 @@
 {% extends "layout.html" %}
 
 {% block body %}
-<div class="main-div-grid">
-    <h1>Area code finder (with countries)</h1>
+<article class="main-div-grid">
+    <h1>Country code finder</h1>
     <img class="banner-img" src="static/img/lucas-george-wendt-IYm2PCy0f8c-unsplash.webp">
     <p class="description">Please enter a phone code number to find country.</p>
-    <form action="/" method="POST">
+    <form action="/" class="user_form_code_country" method="POST">
         <input type="number" id="user_input_code_country" name="area_data_form" placeholder="Enter area code here!">
-        <input id="user_sender_code_country" type="submit">
+        <input id="user_sender_code_country" type="submit" value="Find!">
     </form>
-</div>
+</article>
+<article class="main-div-grid">
+    <h2>What is country code?</h2>
+    <p>Country calling codes or country dial-in codes are telephone number prefixes for reaching telephone subscribers in the networks of the member countries or regions of the International Telecommunication Union (ITU). The codes are defined by the ITU-T in standards E.123 and E.164. The prefixes enable international direct dialing (IDD) and are also referred to as international subscriber dialing (ISD) codes. <a href="https://en.wikipedia.org/wiki/List_of_country_calling_codes">Wikipedia</a>.</p>
+    <img id="world-img" src="static/img/map.webp"></img>
+</article>
 {% endblock %}

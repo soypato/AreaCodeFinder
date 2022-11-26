@@ -1,6 +1,10 @@
 {% extends "layout.html" %}
 
-{% block body %}
- <h1>Ocurrió un error</h1>
- <p>El código que ingresaste no corresponde a ningún país :(</p>
+{% block body %}    
+<article class="main-div-grid">
+    <h2>No results found :(</h2>
+    <p>{{ message }}</p>
+    <img class="banner-img" src="static/img/photo-1444703686981-a3abbc4d4fe3.webp">
+    <a class="a-button-default-style center" href="/">Back to home</a>
+</article>
 {% endblock %}

@@ -1,8 +1,10 @@
 {% extends "layout.html" %}
 
 {% block body %}
-    <div class="main-div-grid">
-        <h1>Hola</h1>
-        <p>{{ db_row_country }}</p>
-    </div>
+    <article class="main-div-grid">
+        <h1>Results for +{{ area_data_form }}</h1>
+        <img class="banner-img" src="static/img/lucas-george-wendt-IYm2PCy0f8c-unsplash.webp">
+        <h2 class="country_results">The country is: {{ db_row_country }}</h2>
+        <a class="a-button-default-style center" href="/">Back to home</a>
+    </article>
 {% endblock %}

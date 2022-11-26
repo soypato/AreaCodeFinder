@@ -13,20 +13,38 @@ body{
     font-size: 1.6rem;
     padding: 1rem 0;
 }
-body{
-}
+
 main{
     display: grid;
     grid-template-columns: .3fr 2fr .3fr;
 }
 .main-div-grid{
-    grid-area: 1 / 2;
+    grid-column-start: 2;
     margin-top: 2rem;
+}
+h1,h2{
+    margin-bottom: 2rem;
 }
 h1{
     font-size: 4.5rem;
-    margin-bottom: 2rem;
     text-align: center;
+}
+h2, .country_results{
+    font-size: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.country_results{
+    text-align: center;
+}
+p{
+    font-size: 1.7rem;
+}
+a, a:hover{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
 }
 .description{
     font-size: 2rem;
@@ -43,7 +61,8 @@ h1{
     font-weight: 500;
     text-align: center;
     padding: 1rem;
-    border-radius: .5rem;
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
     border-style: none;
     font-size: 2.3rem;
     appearance: none;
@@ -57,9 +76,41 @@ h1{
     text-align: center;
 }
 #user_sender_code_country{
-    width: 100%;
-    margin-top: 1rem;
-    border-radius: 1rem;
+    width: 30%;
     border: none;
-    height: 2.4rem;
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+
+}
+.user_form_code_country{
+    display: flex;
+}
+
+#world-img{
+    padding: 3rem;
+    width: 100%;
+}
+footer{
+    width: 100%;
+    background-color: #212529;
+}
+footer > p, footer > p > a{
+    color: #fff;
+    margin: none;
+}
+.a-button-default-style{
+    width: 100%;
+    background-color: #e5e6e7;
+    color: #000;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+.a-button-default-style:hover{
+    color: #000;
+}
+.center{
+    display: block;
+    margin: auto;
+    text-align: center;
 }

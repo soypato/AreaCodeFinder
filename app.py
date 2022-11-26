@@ -13,11 +13,14 @@ def index():
         return render_template("index.html")
     if request.method == "POST":
         area_data_form = request.form.get("area_data_form")
+        if not area_data_form or area_data_form == 0:
+            message = "Please enter a valid area code."
+            return render_template("error.html", message=message)
         try:
             db_custom_instruction = cursor.execute("SELECT country FROM 'codes' WHERE code = ?", (area_data_form,)).fetchall()
             db_row_country = db_custom_instruction[0][0]
-            last_number = db_row_country
             return render_template("results.html", area_data_form=area_data_form, db_row_country=db_row_country)
         except IndexError as e:
-            return render_template("error.html")
+            message = "The code you entered does not correspond to any country."    
+            return render_template("error.html",message=message)
 
