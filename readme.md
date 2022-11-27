@@ -22,7 +22,7 @@ Para construir la aplicación utilicé Python con Flask, la base de datos admini
 - Si el usuario entra a través de POST, por ejemplo cuando completa el formulario, tiene la capacidad de visualizar el país que buscó basándonos en el número ingresado..
   - Si el código de área es encontrado en la base de datos, retornará la entrada y dicho dato.
   - Si el código de área no es encontrado, retornará un mensaje pidiendo que vuelva a ingresar un número.
-  - Si el tipo de dato en cambio es un número inválido (menor a 0), o bien, es otro tipo de dato como una string, se retornará un mensaje de error diciendo que la entrada es inválida, volviendo al inicio para que pueda volver a ingresarla.
+  - Si el tipo de dato en cambio es un número inválido (menor a 0), o bien, es otro tipo de dato como una string, se retornará un mensaje de error diciendo que la entrada es inválida, indicándole "home" para que pueda volver a ingresarla.
   
 ## Ejecución
 Puedes probar la aplicación **descargando este repositorio** y siguiendo los siguientes pasos:
